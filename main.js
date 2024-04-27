@@ -1,6 +1,6 @@
 
 new Typed(".text", {
-    strings: ["","'m Photographer.","want to be a UX UI designer.","want to be a UX UI designer.","want to be a Web Designer."],
+    strings: ["","'m Photographer.","want to be a Web Designer.","want to be a Web Developer.","want to be a Fontend Developer."],
     typeSpeed: 100,
     backSpeed: 50,
     loop: true,

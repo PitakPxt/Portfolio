@@ -347,134 +347,134 @@ html{
 
 
 
-// .projects-section{
-//     margin-top: 100px;
-//     .container{
-//         & > div:first-child{
-//             p{
-//                 font-size: $font-xs;
-//             }
-//             p > span{
-//                 margin-left: 100px;
-//             }
-//             h1{
-//                 font-size: $font-md ;
-//             }
+.projects-section{
+    margin-top: 100px;
+    .container{
+        & > div:first-child{
+            p{
+                font-size: $font-xs;
+            }
+            p > span{
+                margin-left: 100px;
+            }
+            h1{
+                font-size: $font-md ;
+            }
            
-//         }
-//         & > .projects-list{
-//             flex-direction: column;
-//             align-items: center;
-//             display: flex;
-//             gap: 48px;
-//             margin-top: 32px;
-//             margin-bottom: 14px;
-//         }
+        }
+        & > .projects-list{
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+            gap: 48px;
+            margin-top: 32px;
+            margin-bottom: 14px;
+        }
        
-//             & > div:nth-of-type(3){
-//                 text-align: center;
+            & > div:nth-of-type(3){
+                text-align: center;
 
-//                 button{
-//                     font-family: "Mitr", sans-serif;
-//                     font-size: 24px;
-//                     font-weight: 400;
-//                     margin-top: 48px;
-//                     padding: 8px 10px;
-//                     border: solid 3px $primary-color;
-//                     border-radius: 12px;
-//                     color: $primary-color;
-//                     background-color: $white-color;
-//                 }
+                button{
+                    font-family: "Mitr", sans-serif;
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 48px;
+                    padding: 8px 10px;
+                    border: solid 3px $primary-color;
+                    border-radius: 12px;
+                    color: $primary-color;
+                    background-color: $white-color;
+                }
         
-//                 a:hover{
-//                     button{
-//                         background-color: $primary-color;
-//                         color: $white-color;
-//                     }
-//                     color: $white-color;
-//                 } 
+                a:hover{
+                    button{
+                        background-color: $primary-color;
+                        color: $white-color;
+                    }
+                    color: $white-color;
+                } 
 
-//             }
-//     }
-//     .projects-list > div{
-//         display: flex;
-//         width: 842px;
-//         height: 344px;
-//         border: 3px solid $primary-color;
-//         align-items: center;
-//         border-radius: 12px;
-//         padding-left: 48px;
-//         box-shadow: 12px 12px $primary-color;
-//         overflow: hidden;
+            }
+    }
+    .projects-list > div{
+        display: flex;
+        width: 842px;
+        height: 344px;
+        border: 3px solid $primary-color;
+        align-items: center;
+        border-radius: 12px;
+        padding-left: 48px;
+        box-shadow: 12px 12px $primary-color;
+        overflow: hidden;
         
         
-//         .group-badge{
-//             display: flex;
-//             align-items: center;
-//             gap: 4px;
-//         }
+        .group-badge{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
 
-//         .badge{
-//             display: flex;
-//             align-items: center;
-//             justify-content: center;
-//             padding: 0px 4px;
-//             border-radius: 8px;
-//             border: 2px solid $primary-color;
-//             color: $primary-color;
+        .badge{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0px 4px;
+            border-radius: 8px;
+            border: 2px solid $primary-color;
+            color: $primary-color;
 
-//         }
+        }
 
-//         .hover-img{
-//             transition: 300ms;
-//             filter: grayscale(100)
-//         }
+        .hover-img{
+            transition: 300ms;
+            filter: grayscale(100)
+        }
 
-//         span{
-//                 margin-left: 10px;
-//         }
+        span{
+                margin-left: 10px;
+        }
 
-//         h4{
-//             font-size: 32px;
-//             font-weight: 600;
-//         }
+        h4{
+            font-size: 32px;
+            font-weight: 600;
+        }
 
-//         p{
-//             font-size: $font-p;
-//         }
+        p{
+            font-size: $font-p;
+        }
         
-//         button{
-//             font-family: "Mitr", sans-serif;
-//             font-size: 20px;
-//             margin-top: 16px;
-//             width: 128px;
-//             height: 40px;
-//             border-radius: 8px;
-//             background-color: $primary-color;
-//             color: $white-color;
-//         }
+        button{
+            font-family: "Mitr", sans-serif;
+            font-size: 20px;
+            margin-top: 16px;
+            width: 128px;
+            height: 40px;
+            border-radius: 8px;
+            background-color: $primary-color;
+            color: $white-color;
+        }
 
-//         &:hover{
+        &:hover{
             
-//             button{
-//                 background-color: $white-color;
-//                 color: #1A1A1A;
-//             }
-//             .badge{
-//                 border: 2px solid $white-color;
-//                 color: $white-color;
+            button{
+                background-color: $white-color;
+                color: #1A1A1A;
+            }
+            .badge{
+                border: 2px solid $white-color;
+                color: $white-color;
     
-//             }
-//             .hover-img{
-//                 scale: 1.15;
-//                 filter: grayscale(0)
-//             }
-//             background-color: $primary-color;
-//             color: $white-color;
+            }
+            .hover-img{
+                scale: 1.15;
+                filter: grayscale(0)
+            }
+            background-color: $primary-color;
+            color: $white-color;
 
-//         } 
-//     }
-// }
+        } 
+    }
+}
 
 
 

@@ -347,31 +347,31 @@ html{
 
 
 
-.projects-section{
-    margin-top: 100px;
-    .container{
-        & > div:first-child{
-            p{
-                font-size: $font-xs;
-            }
-            p > span{
-                margin-left: 100px;
-            }
-            h1{
-                font-size: $font-md ;
-            }
+// .projects-section{
+//     margin-top: 100px;
+//     .container{
+//         & > div:first-child{
+//             p{
+//                 font-size: $font-xs;
+//             }
+//             p > span{
+//                 margin-left: 100px;
+//             }
+//             h1{
+//                 font-size: $font-md ;
+//             }
            
-        }
-        & > .projects-list{
-            flex-direction: column;
-            align-items: center;
-            display: flex;
-            gap: 48px;
-            margin-top: 32px;
-            margin-bottom: 14px;
-        }
+//         }
+//         & > .projects-list{
+//             flex-direction: column;
+//             align-items: center;
+//             display: flex;
+//             gap: 48px;
+//             margin-top: 32px;
+//             margin-bottom: 14px;
+//         }
        
-    }
+//     }
     .projects-list > div{
         display: flex;
         width: 842px;

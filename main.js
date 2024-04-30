@@ -59,7 +59,7 @@ closeBtn.addEventListener("click", closeOverlay);
 
         const targetId = elm.getAttribute("href")
         const targetElm = document.querySelector(targetId)
-        const offset = 86
+        const offset = 96
 
         const top = targetElm.getBoundingClientRect().top
         const elemOffsetPosition = top + window.pageYOffset - offset

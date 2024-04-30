@@ -45,6 +45,12 @@ html{
     z-index: 10;
     background-color: $white-color;
 
+    
+    .logo{
+        width: 60px;
+    }
+
+
     div {
         display: flex;
         justify-content: space-between;

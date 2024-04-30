@@ -31,6 +31,9 @@ html {
   z-index: 10;
   background-color: #ffffff;
 }
+.header .logo {
+  width: 60px;
+}
 .header div {
   display: flex;
   justify-content: space-between;

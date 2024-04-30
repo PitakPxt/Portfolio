@@ -579,7 +579,7 @@ html {
   flex-direction: column;
 }
 .menu-overlay > div img {
-  margin-left: 370px;
+  margin-left: 280px;
 }
 .menu-overlay > div > div {
   display: flex;

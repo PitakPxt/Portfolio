@@ -371,6 +371,30 @@ html{
             margin-bottom: 14px;
         }
        
+            & > div:nth-of-type(3){
+                text-align: center;
+
+                button{
+                    font-family: "Mitr", sans-serif;
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 48px;
+                    padding: 8px 10px;
+                    border: solid 3px $primary-color;
+                    border-radius: 12px;
+                    color: $primary-color;
+                    background-color: $white-color;
+                }
+        
+                a:hover{
+                    button{
+                        background-color: $primary-color;
+                        color: $white-color;
+                    }
+                    color: $white-color;
+                } 
+
+            }
     }
     .projects-list > div{
         display: flex;

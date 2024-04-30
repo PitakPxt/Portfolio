@@ -288,7 +288,6 @@ html{
         .scroller {
         max-width: 1280px;
         margin-top: -25px;
-        //outline: 3px solid lime;
         
         &__inner-wrapper {
             display: flex;
@@ -301,12 +300,11 @@ html{
             flex-wrap: wrap;
         
             & img {
-            max-width: 250%;
+            max-width: 100%;
             }
         }
         
         &[data-animated="true"] {
-            // border: 5px solid lime;
             overflow: hidden;
             --webkit-mask: linear-gradient(
             90deg,
@@ -337,7 +335,7 @@ html{
         
         @keyframes scroll {
         to {
-            transform: translate(calc(-50% - 0.5rem));
+            transform: translate(calc(-70% - 0.5rem));
         }
         }
     }

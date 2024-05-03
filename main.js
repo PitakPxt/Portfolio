@@ -1,51 +1,51 @@
 
-new Typed(".text", {
-    strings: ["","'m Photographer.","want to be a Web Designer.","want to be a Web Developer.","want to be a Fontend Developer."],
-    typeSpeed: 100,
-    backSpeed: 50,
-    loop: true,
-  });
+// new Typed(".text", {
+//     strings: ["","'m Photographer.","want to be a Web Designer.","want to be a Web Developer.","want to be a Fontend Developer."],
+//     typeSpeed: 100,
+//     backSpeed: 50,
+//     loop: true,
+//   });
 
 
 
 
-const scrollers = document.querySelectorAll('.scroller');
-function addAnimation() {
-    scrollers.forEach((scrollers) => {
-        scrollers.setAttribute("data-animated", true);
+// const scrollers = document.querySelectorAll('.scroller');
+// function addAnimation() {
+//     scrollers.forEach((scrollers) => {
+//         scrollers.setAttribute("data-animated", true);
 
-        const scrollersInner = scrollers.querySelector('.scroller__inner');
-        const scrollersInnerContent = Array.from(scrollersInner.children);
+//         const scrollersInner = scrollers.querySelector('.scroller__inner');
+//         const scrollersInnerContent = Array.from(scrollersInner.children);
 
-        scrollersInnerContent.forEach(item => {
-            const dupilcatedItem = item.cloneNode(true)
-            dupilcatedItem.setAttribute('aria-hidden', true)
-            scrollersInner.appendChild(dupilcatedItem)
-        })
-    })
-}
+//         scrollersInnerContent.forEach(item => {
+//             const dupilcatedItem = item.cloneNode(true)
+//             dupilcatedItem.setAttribute('aria-hidden', true)
+//             scrollersInner.appendChild(dupilcatedItem)
+//         })
+//     })
+// }
 
-addAnimation()
+// addAnimation()
 
-const menuBtn = document.querySelector(".menu");
-const menuOverlay = document.querySelector(".menu-overlay");
-const closeBtn = document.querySelector(".close-btn");
-const links = document.querySelectorAll(".menu-link-overlay a");
+// const menuBtn = document.querySelector(".menu");
+// const menuOverlay = document.querySelector(".menu-overlay");
+// const closeBtn = document.querySelector(".close-btn");
+// const links = document.querySelectorAll(".menu-link-overlay a");
 
-const closeOverlay = () => {
-  menuOverlay.classList.remove("opened");
-  document.body.style.paddingRight = "0";
-};
+// const closeOverlay = () => {
+//   menuOverlay.classList.remove("opened");
+//   document.body.style.paddingRight = "0";
+// };
 
-links.forEach((elm) => {
-  elm.addEventListener("click", closeOverlay);
-});
+// links.forEach((elm) => {
+//   elm.addEventListener("click", closeOverlay);
+// });
 
-menuBtn.addEventListener("click", () => {
-  menuOverlay.classList.toggle("opened");
-});
+// menuBtn.addEventListener("click", () => {
+//   menuOverlay.classList.toggle("opened");
+// });
 
-closeBtn.addEventListener("click", closeOverlay);
+// closeBtn.addEventListener("click", closeOverlay);
 
 
 

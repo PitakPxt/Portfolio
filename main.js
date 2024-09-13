@@ -2,9 +2,13 @@ new Typed(".text", {
   strings: [
     "",
     "'m Photographer.",
+    "",
     "want to be a Web Designer.",
+    "",
     "want to be a Web Developer.",
+    "",
     "want to be a Fontend Developer.",
+    "",
     "want to be a UXUI Designer.",
   ],
   typeSpeed: 100,

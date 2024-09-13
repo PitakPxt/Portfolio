@@ -380,7 +380,6 @@ html {
     padding-left: 48px;
     box-shadow: 12px 12px $primary-color;
     overflow: hidden;
-    margin-bottom: 200px;
 
     .group-badge {
       display: flex;
@@ -522,6 +521,7 @@ html {
 
 .contact-section {
   margin-top: 100px;
+  margin-bottom: 200px;
 
   .container {
     & > div {

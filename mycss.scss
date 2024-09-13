@@ -21,7 +21,7 @@ body {
   background: $white-color;
   color: $primary-color;
   min-height: 200vh;
-  margin-bottom: 200px;
+  margin-bottom: 50px;
 }
 .container {
   max-width: 1296px;
@@ -380,6 +380,7 @@ html {
     padding-left: 48px;
     box-shadow: 12px 12px $primary-color;
     overflow: hidden;
+    margin-bottom: 200px;
 
     .group-badge {
       display: flex;

@@ -1,31 +1,34 @@
-
 new Typed(".text", {
-    strings: ["","'m Photographer.","want to be a Web Designer.","want to be a Web Developer.","want to be a Fontend Developer."],
-    typeSpeed: 100,
-    backSpeed: 50,
-    loop: true,
-  });
+  strings: [
+    "",
+    "'m Photographer.",
+    "want to be a Web Designer.",
+    "want to be a Web Developer.",
+    "want to be a Fontend Developer.",
+    "want to be a UXUI Designer.",
+  ],
+  typeSpeed: 100,
+  backSpeed: 50,
+  loop: true,
+});
 
-
-
-
-const scrollers = document.querySelectorAll('.scroller');
+const scrollers = document.querySelectorAll(".scroller");
 function addAnimation() {
-    scrollers.forEach((scrollers) => {
-        scrollers.setAttribute("data-animated", true);
+  scrollers.forEach((scrollers) => {
+    scrollers.setAttribute("data-animated", true);
 
-        const scrollersInner = scrollers.querySelector('.scroller__inner');
-        const scrollersInnerContent = Array.from(scrollersInner.children);
+    const scrollersInner = scrollers.querySelector(".scroller__inner");
+    const scrollersInnerContent = Array.from(scrollersInner.children);
 
-        scrollersInnerContent.forEach(item => {
-            const dupilcatedItem = item.cloneNode(true)
-            dupilcatedItem.setAttribute('aria-hidden', true)
-            scrollersInner.appendChild(dupilcatedItem)
-        })
-    })
+    scrollersInnerContent.forEach((item) => {
+      const dupilcatedItem = item.cloneNode(true);
+      dupilcatedItem.setAttribute("aria-hidden", true);
+      scrollersInner.appendChild(dupilcatedItem);
+    });
+  });
 }
 
-addAnimation()
+addAnimation();
 
 const menuBtn = document.querySelector(".menu");
 const menuOverlay = document.querySelector(".menu-overlay");
@@ -47,31 +50,27 @@ menuBtn.addEventListener("click", () => {
 
 closeBtn.addEventListener("click", closeOverlay);
 
-
-
-
 (() => {
-  const headerLinks = document.querySelectorAll(".menu-list a")
+  const headerLinks = document.querySelectorAll(".menu-list a");
   headerLinks.forEach((elm) => {
-    elm.addEventListener('click', (e) => {
-        e.preventDefault()
+    elm.addEventListener("click", (e) => {
+      e.preventDefault();
 
+      const targetId = elm.getAttribute("href");
+      const targetElm = document.querySelector(targetId);
+      const offset = 100;
 
-        const targetId = elm.getAttribute("href")
-        const targetElm = document.querySelector(targetId)
-        const offset = 100
+      const top = targetElm.getBoundingClientRect().top;
+      const elemOffsetPosition = top + window.pageYOffset - offset;
 
-        const top = targetElm.getBoundingClientRect().top
-        const elemOffsetPosition = top + window.pageYOffset - offset
+      window.scrollTo({
+        top: elemOffsetPosition,
+        behavior: "smooth",
+      });
 
-        window.scrollTo({
-          top: elemOffsetPosition,
-          behavior: "smooth"
-        })
+      history.pushState({}, null, targetId);
 
-        history.pushState({}, null, targetId)
-
-        return false
-    })
-  })
-})()
+      return false;
+    });
+  });
+})();

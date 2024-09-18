@@ -55,17 +55,21 @@ menuBtn.addEventListener("click", () => {
 closeBtn.addEventListener("click", closeOverlay);
 
 (() => {
-  const headerLinks = document.querySelectorAll(".menu-list a");
+  const headerLinks = document.querySelectorAll(
+    ".menu-list a, .menu-link-overlay a"
+  );
+
   headerLinks.forEach((elm) => {
     elm.addEventListener("click", (e) => {
       e.preventDefault();
 
       const targetId = elm.getAttribute("href");
       const targetElm = document.querySelector(targetId);
+
       const offset = 100;
 
       const top = targetElm.getBoundingClientRect().top;
-      const elemOffsetPosition = top + window.pageYOffset - offset;
+      const elemOffsetPosition = top + window.scrollY - offset;
 
       window.scrollTo({
         top: elemOffsetPosition,

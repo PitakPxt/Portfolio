@@ -7,7 +7,7 @@
 body {
   font-family: "Mitr", sans-serif;
   background: #ffffff;
-  color: #1A1A1A;
+  color: #1a1a1a;
   min-height: 200vh;
   margin-bottom: 100px;
 }
@@ -43,7 +43,7 @@ html {
 }
 .header a {
   text-decoration: none;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 .header .menu {
   display: none;
@@ -83,7 +83,7 @@ html {
 }
 .hero-section h3 {
   font-size: 48px;
-  color: #7F7F7F;
+  color: #7f7f7f;
 }
 .hero-section > div > div {
   gap: 1.1rem;
@@ -94,7 +94,7 @@ html {
   flex-direction: column;
   height: 126px;
   width: 660px;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   border-radius: 12px;
 }
 .hero-section > div > div .console-log > div:first-child {
@@ -108,13 +108,13 @@ html {
   border-radius: 9999px;
 }
 .hero-section > div > div .console-log .dot.red {
-  background-color: #F14C4D;
+  background-color: #f14c4d;
 }
 .hero-section > div > div .console-log .dot.yellow {
   background-color: #ff9114;
 }
 .hero-section > div > div .console-log .dot.green {
-  background-color: #26C96F;
+  background-color: #26c96f;
 }
 .hero-section > div > div .console-log .subtitle {
   display: flex;
@@ -128,22 +128,22 @@ html {
   color: #ff9114;
 }
 .hero-section > div > div .console-log .subtitle > p .font-yellow {
-  color: #FFE36D;
+  color: #ffe36d;
 }
 .hero-section > div > div .console-log .subtitle > p .font-green {
-  color: #26C96F;
+  color: #26c96f;
 }
 .hero-section .hero-social {
   display: flex;
   gap: 12px;
 }
 .hero-section .hero-social > a > div {
-  border: 3px solid #1A1A1A;
+  border: 3px solid #1a1a1a;
   padding: 8px;
   border-radius: 9999px;
 }
 .hero-section .hero-social > a > div:hover {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   transition: 0.3s all ease;
 }
 .hero-section .hero-social > a > div:hover svg > path {
@@ -173,15 +173,15 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 3px solid #1A1A1A;
+  border: 3px solid #1a1a1a;
   width: 170px;
   height: 170px;
   border-radius: 12px;
-  box-shadow: 8px 8px #1A1A1A;
+  box-shadow: 8px 8px #1a1a1a;
   overflow: hidden;
 }
 .profile-section .container .border-skill div:hover {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   color: #ffffff;
 }
 .profile-section .container .border-skill div:hover svg {
@@ -234,23 +234,30 @@ html {
 .profile-section .container .scroller__inner img {
   max-width: 100%;
 }
-.profile-section .container .scroller[data-animated=true] {
+.profile-section .container .scroller[data-animated="true"] {
   overflow: hidden;
   --webkit-mask: linear-gradient(
-  90deg,
-  transparent,
-  white 20%,
-  white 80%,
-  transparent
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
   );
-  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-          mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
-.profile-section .container .scroller[data-animated=true] .scroller__inner {
+.profile-section .container .scroller[data-animated="true"] .scroller__inner {
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duratoin, 40s) var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duratoin, 40s)
+    var(--_animation-direction, forwards) linear infinite;
 }
-.profile-section .container .scroller[data-duration=fast] {
+.profile-section .container .scroller[data-duration="fast"] {
   --_animation-duratoin: 20s;
 }
 @keyframes scroll {
@@ -288,27 +295,27 @@ html {
   font-weight: 400;
   margin-top: 48px;
   padding: 8px 10px;
-  border: solid 3px #1A1A1A;
+  border: solid 3px #1a1a1a;
   border-radius: 12px;
-  color: #1A1A1A;
+  color: #1a1a1a;
   background-color: #ffffff;
 }
 .projects-section .container > div:nth-of-type(3) a:hover {
   color: #ffffff;
 }
 .projects-section .container > div:nth-of-type(3) a:hover button {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   color: #ffffff;
 }
 .projects-section .projects-list > div {
   display: flex;
   width: 842px;
   height: 344px;
-  border: 3px solid #1A1A1A;
+  border: 3px solid #1a1a1a;
   align-items: center;
   border-radius: 12px;
   padding-left: 48px;
-  box-shadow: 12px 12px #1A1A1A;
+  box-shadow: 12px 12px #1a1a1a;
   overflow: hidden;
 }
 .projects-section .projects-list > div .group-badge {
@@ -322,8 +329,8 @@ html {
   justify-content: center;
   padding: 0px 4px;
   border-radius: 8px;
-  border: 2px solid #1A1A1A;
-  color: #1A1A1A;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
 }
 .projects-section .projects-list > div .hover-img {
   transition: 300ms;
@@ -346,16 +353,16 @@ html {
   width: 128px;
   height: 40px;
   border-radius: 8px;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   color: #ffffff;
 }
 .projects-section .projects-list > div:hover {
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
   color: #ffffff;
 }
 .projects-section .projects-list > div:hover button {
   background-color: #ffffff;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 .projects-section .projects-list > div:hover .badge {
   border: 2px solid #ffffff;
@@ -380,9 +387,10 @@ html {
 }
 .certs-section .container .certs-list > div > div:hover {
   transition: 300ms;
-  background-color: #1A1A1A;
+  background-color: #1a1a1a;
 }
-.certs-section .container .certs-list > div > div:hover h5, .certs-section .container .certs-list > div > div:hover h6 {
+.certs-section .container .certs-list > div > div:hover h5,
+.certs-section .container .certs-list > div > div:hover h6 {
   color: #ffffff;
 }
 .certs-section .container .certs-list > div > div:hover img {
@@ -400,7 +408,7 @@ html {
 .certs-section .container .certs-list h6 {
   font-size: 18px;
   font-weight: 400;
-  color: #7F7F7F;
+  color: #7f7f7f;
 }
 .certs-section .container .certs-list img {
   transition: 300ms;
@@ -415,9 +423,9 @@ html {
   gap: 2rem;
 }
 .certs-section .container .certs-list > div > div {
-  border: 3px solid #1A1A1A;
+  border: 3px solid #1a1a1a;
   border-radius: 0px 0px 12px 12px;
-  box-shadow: 12px 12px #1A1A1A;
+  box-shadow: 12px 12px #1a1a1a;
 }
 .certs-section .container .img-wrap {
   overflow: hidden;
@@ -450,7 +458,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   -moz-column-gap: 72px;
-       column-gap: 72px;
+  column-gap: 72px;
   row-gap: 24px;
   justify-content: center;
 }
@@ -509,7 +517,8 @@ html {
     width: 100%;
     align-items: center;
   }
-  .hero-section > .container > div:first-child h1, .hero-section > .container > div:first-child h2 {
+  .hero-section > .container > div:first-child h1,
+  .hero-section > .container > div:first-child h2 {
     font-size: 48px;
   }
   .hero-section > .container > div:first-child h3 {
@@ -520,7 +529,13 @@ html {
     height: 100%;
     min-height: 120px;
   }
-  .hero-section > .container > div:first-child .console-log .subtitle > p > span {
+  .hero-section
+    > .container
+    > div:first-child
+    .console-log
+    .subtitle
+    > p
+    > span {
     font-size: 20px !important;
   }
   .hero-section > .container > div:last-child img {
@@ -543,7 +558,13 @@ html {
     align-items: start;
     margin-bottom: 1rem;
   }
-  .projects-section > .container .projects-list > div > div .group-badge > span {
+  .projects-section
+    > .container
+    .projects-list
+    > div
+    > div
+    .group-badge
+    > span {
     margin: 0;
   }
 }
@@ -552,13 +573,20 @@ html {
     width: 100%;
     align-items: center;
   }
-  .hero-section > .container > div:first-child h1, .hero-section > .container > div:first-child h2 {
+  .hero-section > .container > div:first-child h1,
+  .hero-section > .container > div:first-child h2 {
     font-size: 48px;
   }
   .hero-section > .container > div:first-child h3 {
     font-size: 2rem;
   }
-  .hero-section > .container > div:first-child .console-log .subtitle > p > span {
+  .hero-section
+    > .container
+    > div:first-child
+    .console-log
+    .subtitle
+    > p
+    > span {
     font-size: 14px !important;
   }
   .projects-section > .container .projects-list {
@@ -647,5 +675,16 @@ html {
 .menu-overlay.opened {
   transform: translateX(0);
   pointer-events: all;
-}/*# sourceMappingURL=mycss.css.map */
+} /*# sourceMappingURL=mycss.css.map */
 
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999; /* so that it stays on top of all other elements */
+}
